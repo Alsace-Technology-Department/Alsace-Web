@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>阿尔萨斯工业｜作品</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+
+        a {
+            color: #d8271e !important;
+        }
+
+        a:hover {
+            color: #f06c65;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="https://ns.alsace.team/service/images/logo/%E5%9B%A2%E6%A0%87.png" type="image/png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
+        aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        We use cookies so that our themes work for you. By using our website, you agree to our use of
+                        cookies.
+                    </p>
+                    <!-- Buttons -->
+                    <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="阿尔萨斯工业LOGO" src="https://ns.alsace.team/service/images/logo/%E5%9B%A2%E6%A0%87.png"
+                    id="navbar-logo">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="https://www.alsace.team/">首页</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="###">工业园服务器</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-animate" data-toggle="hover">
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">联系我们</a>
+                        <div class="dropdown-menu dropdown-menu-single">
+                            <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Or0lLwYEHFzY_D7hZUoHKp4ANjrGdfuX&authKey=Yzlq2b8X8N%2BsyelDeDHs7Rym8Fl85Pzxn7rE8tVXdjhZIUsBql9ZVuGdwfZ1cKmE&noverify=0&group_code=916435182"
+                                class="dropdown-item" target="_blank">交流群</a>
+                            <a href="https://space.bilibili.com/47983516" class="dropdown-item"
+                                target="_blank">Bilibili</a>
+                            <a href="mailto:business@alsace.team" class="dropdown-item">邮箱-商务合作</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="https://alsaceteam.feishu.cn/wiki/T1xBwlGxSiL123kMAPicIZ0DnYe"
+                                class="dropdown-item" target="_blank">加入我们</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="slice slice-lg">
+        <div class="row justify-content-center mb-6">
+            <div class="col-lg-8">
+                <h2 class="h1 strong-600">
+                    团队及团员作品
+                </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">阿克斯城｜Arks City</h5>
+                        <p class="lead my-4">
+                            城早花芳，灰尘溅湿轮毂，城市血脉回转，敦实陶瓦淌流金色太阳辉光。<br>
+                            城晚麦香，炉烟舐上书角，黄发垂首沉香，粼粼浪沫扬起寰宇星辰闪亮。<br>
+                            凯尔盖朗·下篇——阿克斯城（Arks City）
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card mb-0 mr-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="阿克斯城全景" src="https://ns.alsace.team/service/images/img/arks.JPG"
+                                    class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <h5 class="h3">柚猫城｜YouMao City</h5>
+                        <p class="lead my-4">
+                            四年岁月 终谱成一曲华章 <br>
+                            凯尔盖朗·上篇——柚猫城
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-0 ml-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="柚猫城全景" src="https://ns.alsace.team/service/images/img/1__F.png"
+                                    class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">新卡蒂亚斯｜Sincartias</h5>
+                        <p class="lead my-4 p-header">
+                            新卡蒂亚斯是处于文艺复兴晚期的一座位于不明维度的海上城邦，这座城市充斥着教派与皇权之间的斗争。疯子、艺术家、天才、神棍和非人类在女王的统治下层出不穷，但似乎一切都被粉饰得十分合理。不明的人口失踪和超自然事件如寒雾般笼罩于此，失乐园内父神的信徒终日忏悔，而艺术的微风却总能吹淡城市里弥漫的腐朽和恐惧的海腥味。但请记住，不要尝试在夜晚盯着石像鬼雕像，即使它看起来像是活物一样。
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card mb-0 mr-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="新卡蒂亚斯全景" src="https://ns.alsace.team/service/images/img/ca956d61ecc159dc18d6b024261c87aa47983516.png"
+                                    class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <h5 class="h3">米亚伍德城</h5>
+                        <p class="lead my-4">
+                            一个魔物与人类共存的城市。目标是让每一个角度截图下来都能成为壁纸。
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-0 ml-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="米亚伍德城街角" src="https://ns.alsace.team/service/images/img/5d4025338d2d661f615f0ef81551ee9247983516.jpg"
+                                    class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5 order-lg-2">
+                        <h5 class="h3">新澳瑞萨斯</h5>
+                        <p class="lead my-4 p-header">
+                            大洋东岸的巨型海港城市，耸立着的科技大楼，簇拥着的老旧公寓......新澳瑞萨斯将会是一个遮天蔽日的赛博迷城，包涵经典赛博朋克的多元与叛逆元素
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="card mb-0 mr-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="新澳瑞萨斯街景" src="https://ns.alsace.team/service/images/img/b7192f81a73f9c6698556320bd6aa03b47983516.jpg"
+                                    class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <h5 class="h3">神沢川城</h5>
+                        <p class="lead my-4">
+                            基于大阪城、江户城等日本古代大型都市为原型，架空魔改的超大型古代日式城市群。全建筑群均采用小比例建造，旨在于能让玩家以第一视角沉浸式体验东亚古建筑的美。
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card mb-0 ml-lg-5">
+                            <div class="card-body p-2">
+                                <img alt="神沢川城" src="https://alsace-web-1318358151.cos.ap-shanghai.myqcloud.com/service/images/img/900db827f98712646290d80b624c11fa47983516.png"
+                                    class="img-fluid shadow rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image1 cid-spm7maRhfq" id="image1-9">
+        <footer class="position-relative" id="footer-main">
+            <div class="footer pt-lg-7 footer-danger bg-darkred">
+                <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                    <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px"
+                        viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve"
+                        class=" fill-section-secondary">
+                        <polygon points="2560 0 2560 100 0 100"></polygon>
+                    </svg>
+                </div>
+                <!-- Footer -->
+                <div class="container pt-4">
+                    <div class="row">
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <h2 class="display-6 text-center text-md-left mb-3">
+                                阿尔萨斯工业<br>
+                                <strong class="text-danger">Usine d' Alsace</strong>
+                            </h2>
+                            <!-- Webpixels' mission -->
+                            <p class="mt-4 text-sm opacity-8 pr-lg-4 p-header">
+                                我们的团队成员不仅仅是建筑师，更是创造者和梦想家。我们致力于为Minecraft玩家社区带来无尽的创意和乐趣，让每个人都能在我们的作品中找到灵感和欢乐。</p>
+                            <!-- <p class="mt-4 text-sm opacity-8 pr-lg-4">
+                            加入我们，一起探索无限的可能性，一起建造属于你的梦想世界。阿尔萨斯工业团队，因梦而建，因爱而生！</p> -->
+                            <!-- Social -->
+                            <ul class="nav mt-4">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://space.bilibili.com/47983516" target="_blank">
+                                        <svg t="1695816893485" class="icon mr-0" viewBox="0 0 1120 1024" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg" p-id="1467" width="16" height="16">
+                                            <path
+                                                d="M234.908525 9.656195a80.468288 80.468288 0 0 1 68.398044 0 167.374038 167.374038 0 0 1 41.84351 30.577949l160.936576 140.819503H621.156306L782.092881 40.234144a168.983404 168.983404 0 0 1 41.84351-30.577949 80.468288 80.468288 0 0 1 107.022823 66.788678 80.468288 80.468288 0 0 1-17.703024 53.913753 449.817728 449.817728 0 0 1-35.406046 32.187315 232.553351 232.553351 0 0 1-22.531121 18.507706h100.58536a170.59277 170.59277 0 0 1 118.288383 53.10907A171.397453 171.397453 0 0 1 1128.106519 352.4511v462.692655a325.896565 325.896565 0 0 1-4.023415 70.00741 178.639599 178.639599 0 0 1-80.468288 112.655603 173.006819 173.006819 0 0 1-92.53853 25.749852H212.377404a341.18554 341.18554 0 0 1-72.421459-4.023415 177.834916 177.834916 0 0 1-111.046237-80.468287A172.202136 172.202136 0 0 1 1.550491 846.526387V388.66183A360.497929 360.497929 0 0 1 1.550491 321.873151a177.030233 177.030233 0 0 1 160.936575-143.233552h105.413457c-16.89834-12.070243-31.382632-26.554535-46.671607-39.429461a80.468288 80.468288 0 0 1-25.749852-65.983996A80.468288 80.468288 0 0 1 234.908525 9.656195M216.400819 321.873151a80.468288 80.468288 0 0 0-63.569948 57.937167 108.632188 108.632188 0 0 0 0 30.577949v380.615001a80.468288 80.468288 0 0 0 55.523119 80.468288 106.21814 106.21814 0 0 0 34.601364 5.63278h654.207179a80.468288 80.468288 0 0 0 76.444873-47.47629 112.655603 112.655603 0 0 0 8.046829-53.10907v-354.060465a135.186723 135.186723 0 0 0 0-38.624779 80.468288 80.468288 0 0 0-52.304387-54.718435 129.553943 129.553943 0 0 0-49.890338-7.242146H254.220914a268.764081 268.764081 0 0 0-37.820095 0z m0 0"
+                                                fill="#f14767" p-id="1468"></path>
+                                            <path
+                                                d="M348.368811 447.40368a80.468288 80.468288 0 0 1 55.523118 18.507706 80.468288 80.468288 0 0 1 28.163901 59.546533v80.468287a80.468288 80.468288 0 0 1-16.093658 51.499705 80.468288 80.468288 0 0 1-131.967992-9.656195 104.608774 104.608774 0 0 1-10.460877-54.718436v-80.468287a80.468288 80.468288 0 0 1 70.00741-67.593362z m416.021047 0a80.468288 80.468288 0 0 1 86.101068 75.64019v80.468288a94.147897 94.147897 0 0 1-12.070243 53.10907 80.468288 80.468288 0 0 1-132.772675 0 95.757262 95.757262 0 0 1-12.874926-57.132485v-80.468287a80.468288 80.468288 0 0 1 70.00741-70.812093z m0 0"
+                                                fill="#f14767" p-id="1469"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://gitee.com/alsacework" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://twitter.com/Alsaceteam" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-soc" href="mailto:business@alsace.team" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                            <path
+                                                d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                            <h6 class="heading mb-3">团队</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#">订阅</a></li>
+                                <li><a
+                                        href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Or0lLwYEHFzY_D7hZUoHKp4ANjrGdfuX&authKey=Yzlq2b8X8N%2BsyelDeDHs7Rym8Fl85Pzxn7rE8tVXdjhZIUsBql9ZVuGdwfZ1cKmE&noverify=0&group_code=916435182">交流群</a>
+                                </li>
+                                <li><a href="https://alsaceteam.feishu.cn/wiki/T1xBwlGxSiL123kMAPicIZ0DnYe">招新公告</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                            <h6 class="heading mb-3">商务合作</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="mailto:business@alsace.team">邮箱</a></li>
+                                <li><a>QQ：2017690157</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                            <h6 class="heading mb-3">工业园</h6>
+                            <ul class="list-unstyled">
+                                <li><a
+                                        href="https://alsaceteam.feishu.cn/wiki/F8AHwoD18iq45fk3ieSc6pcGnYy?from=from_copylink">用户协议</a>
+                                </li>
+                                <li><a
+                                        href="https://alsaceteam.feishu.cn/wiki/MeskwzXl1icsnXkQc4nc7BJknRh?from=from_copylink">地图托管协议</a>
+                                </li>
+                                <li><a
+                                        href="https://alsaceteam.feishu.cn/wiki/WW5OwYXP8ioKpZkZgYjcAZNtnNc?from=from_copylink">团队服协议</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="divider divider-fade divider-dark my-4">
+                    <div class="row align-items-center justify-content-md-between pb-4">
+                        <div class="col-md-6">
+                            <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                                &copy; 2020 -
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                长沙阿尔萨斯文化传播有限公司 All Rights Reserved.
+                                <br>Powered by Usine d' Alsace · 阿尔萨斯工业™
+                                <br><a href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2023023798号</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        Cookies
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Core JS  -->
+        <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-7ymO4nGrkm372HoSbq1OY2DP4pEZnMiA+E0F3zPr+JQQtQ82gQ1HPY3QIVtztVua" crossorigin="anonymous">
+        </script>
+        <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+        <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+        <!-- Quick JS -->
+        <script src="assets/js/quick-website.js"></script>
+        <!-- Feather Icons -->
+        <script>
+            feather.replace({
+                'width': '1em',
+                'height': '1em'
+            })
+        </script>
+</body>
+
+</html>

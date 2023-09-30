@@ -1,0 +1,27 @@
+.bg-darkred {
+    background-color: #260b0b;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: maroon !important;
+}
+.nav-link-soc > svg {
+    margin: 0;
+}
+.btn-border{
+    color: #273444;
+    border: 2px solid #e2e8f0;
+    background-color: transparent;
+}
+
+.btn-border:hover {
+    border-color: #d8271e;
+    background-color: transparent;
+}
+
+.p-header {
+    text-indent: 2rem;
+}
+.pd-0 {
+    padding: 0 !important;
+}
