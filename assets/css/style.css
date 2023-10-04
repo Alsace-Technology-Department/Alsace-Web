@@ -25,3 +25,8 @@ h1,h2,h3,h4,h5,h6 {
 .pd-0 {
     padding: 0 !important;
 }
+.navbar-img img {
+    width: 50%;
+    height: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
