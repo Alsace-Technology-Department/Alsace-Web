@@ -30,3 +30,20 @@ h1,h2,h3,h4,h5,h6 {
     height: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.player img {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.player span {
+    font-size: 14px;
+}
