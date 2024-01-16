@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动生成iframe</title>
+</head>
+
+<body>
+
+    <!-- 用于容纳iframe的div -->
+    <div id="iframeContainer"></div>
+
+    <script>
+        // 获取当前页面的URL
+        var currentUrl = window.location.href;
+
+        // 提取路径部分
+        var path = new URL(currentUrl).pathname;
+
+        // 构建iframe的src
+        var iframeSrc = "https://alsaceteam.feishu.cn" + path;
+
+        // 创建iframe元素
+        var iframeElement = document.createElement("iframe");
+        iframeElement.className = "stack";
+        iframeElement.src = iframeSrc;
+
+        // 将iframe添加到容器中
+        var iframeContainer = document.getElementById("iframeContainer");
+        iframeContainer.appendChild(iframeElement);
+    </script>
+
+</body>
+
+</html>
