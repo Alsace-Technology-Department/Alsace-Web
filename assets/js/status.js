@@ -11,12 +11,15 @@ function updateCard(data, cardId, statusId) {
     var card = document.getElementById(cardId);
     var statusSpan = document.getElementById(statusId);
 
-    // Custom text based on your preferences
     var customText = "";
     if (statusId === "statusMain") {
-        customText = "工业园建筑服";
+        customText = "建筑服";
     } else if (statusId === "statusSurvival") {
-        customText = "工业园生存服";
+        customText = "生存服";
+    } else if (statusId === "statusGame") {
+        customText = "小游戏服"
+    } else if (statusId === "statusRpg") {
+        customText = "RPG服"
     }
 
 
@@ -59,5 +62,5 @@ function updateCard(data, cardId, statusId) {
 
 document.addEventListener("DOMContentLoaded", function () {
     fetchServerStatus("alsace.work", "mainCard", "statusMain");
-    fetchServerStatus("dx.alsace.work:11281", "survivalCard", "statusSurvival");
+    fetchServerStatus("survival.alsace.work", "survivalCard", "statusSurvival");
 });
