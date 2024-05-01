@@ -1,0 +1,35 @@
+name: Continuous integration of static websites to COS
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build_and_deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install coscmd and tccli
+        run: |
+          sudo pip install coscmd
+          sudo pip install tccli
+
+      - name: Config COS
+        env:
+          SECRET_ID: ${{ secrets.TCLOUD_API_ID }}
+          SECRET_KEY: ${{ secrets.TCLOUD_API_KEY }}
+          BUCKET: webapp-1318358151
+          REGION: ap-shanghai
+        run: |
+          coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+          tccli configure set secretId $SECRET_ID
+          tccli configure set secretKey $SECRET_KEY
+          tccli configure set region $REGION
+
+      - name: Upload to COS and purge CDN
+        run: |
+          coscmd upload -rfs --delete . /
+          tccli cdn PurgePathCache --cli-unfold-argument --Paths https://www.alsace.team/ --FlushType flush
